@@ -26,6 +26,7 @@ const Home = () => {
 					type="text"
 					value={inputValue}
 					onChange={handleOnChange}
+					 onKeyDown={(e) => e.key === "Enter" && handleOnClick()} 
 					placeholder="¿Qué te falta?..."
 				/>
 				<button className='btn-add' onClick={handleOnClick}>Agregar</button>
